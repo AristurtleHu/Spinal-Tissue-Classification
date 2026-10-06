@@ -10,6 +10,21 @@
 __pycache__/
 *.py[cod]
 
+# logs
+*.log
+
+# latex build artifacts
+*.aux
+*.out
+*.synctex.gz
+
+# submission archive
+EE180_Project1_submission.zip
+
+# reference papers (copyrighted, not redistributed)
+paper/
+Paper3-BMEL2024.pdf
+
 # envs
 .venv/
 venv/
