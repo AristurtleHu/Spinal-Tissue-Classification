@@ -1,0 +1,145 @@
+{
+  "config": "svm_C100",
+  "val": {
+    "micro": {
+      "accuracy": 0.9444444444444444,
+      "sensitivity": 0.9444444444444444,
+      "specificity": 0.9814814814814815,
+      "accuracy_ovr_spec": 0.9722222222222222
+    },
+    "per_class": {
+      "spinal_cord": {
+        "precision": 0.9705882352941176,
+        "recall": 0.8918918918918919,
+        "specificity": 0.9887640449438202,
+        "f1": 0.9295774647887325,
+        "support": 37
+      },
+      "nucleus_pulposus": {
+        "precision": 0.9117647058823529,
+        "recall": 0.96875,
+        "specificity": 0.9680851063829787,
+        "f1": 0.9393939393939394,
+        "support": 32
+      },
+      "adipose_tissue": {
+        "precision": 0.9444444444444444,
+        "recall": 0.9444444444444444,
+        "specificity": 0.9907407407407407,
+        "f1": 0.9444444444444444,
+        "support": 18
+      },
+      "nerve_root": {
+        "precision": 0.95,
+        "recall": 0.9743589743589743,
+        "specificity": 0.9770114942528736,
+        "f1": 0.9620253164556962,
+        "support": 39
+      }
+    },
+    "confusion_matrix": [
+      [
+        33,
+        2,
+        1,
+        1
+      ],
+      [
+        0,
+        31,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        17,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        38
+      ]
+    ],
+    "classes": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "signal_accuracy": 0.7908163265306123
+  },
+  "test": {
+    "micro": {
+      "accuracy": 0.9523809523809523,
+      "sensitivity": 0.9523809523809523,
+      "specificity": 0.9841269841269841,
+      "accuracy_ovr_spec": 0.9761904761904762
+    },
+    "per_class": {
+      "spinal_cord": {
+        "precision": 1.0,
+        "recall": 0.918918918918919,
+        "specificity": 1.0,
+        "f1": 0.9577464788732395,
+        "support": 37
+      },
+      "nucleus_pulposus": {
+        "precision": 0.9393939393939394,
+        "recall": 0.96875,
+        "specificity": 0.9787234042553191,
+        "f1": 0.9538461538461539,
+        "support": 32
+      },
+      "adipose_tissue": {
+        "precision": 0.9411764705882353,
+        "recall": 0.8888888888888888,
+        "specificity": 0.9907407407407407,
+        "f1": 0.9142857142857143,
+        "support": 18
+      },
+      "nerve_root": {
+        "precision": 0.9285714285714286,
+        "recall": 1.0,
+        "specificity": 0.9655172413793104,
+        "f1": 0.962962962962963,
+        "support": 39
+      }
+    },
+    "confusion_matrix": [
+      [
+        34,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        31,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        16,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        39
+      ]
+    ],
+    "classes": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "signal_accuracy": 0.8044217687074829
+  }
+}
