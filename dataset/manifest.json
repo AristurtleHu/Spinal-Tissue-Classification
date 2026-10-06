@@ -1,0 +1,104 @@
+{
+  "release": "2026_Project1",
+  "split_seed": 20260907,
+  "unique_biological_samples": 758,
+  "signals_per_sample": 14,
+  "signal_length": 896,
+  "sampling_rate_hz": 75000000,
+  "class_labels": [
+    0,
+    1,
+    2,
+    5
+  ],
+  "class_names": [
+    "spinal_cord",
+    "nucleus_pulposus",
+    "adipose_tissue",
+    "nerve_root"
+  ],
+  "grouping": "Within each subset, consecutive rows [14*j:14*(j+1)] form one ordered biological sample.",
+  "requested_ratio": {
+    "train": 4,
+    "test": 1,
+    "val": 1
+  },
+  "split_method": "Stratified biological-sample shuffle with numpy.default_rng. Equal holdouts rounded to 126 each; remaining 506 samples assigned to train. Per-class holdout quotas use largest remainders.",
+  "files": {
+    "train_data.npy": {
+      "shape": [
+        7084,
+        896
+      ],
+      "dtype": "int64",
+      "sha256": "bb4274d1ae31ec5d050321917e1a0ad0bf2da7b1c32784004f6609c1eb462e6c"
+    },
+    "train_label.npy": {
+      "shape": [
+        7084
+      ],
+      "dtype": "int64",
+      "sha256": "a93ef384de8f33a32431dec44d014854b796b5101b4ae148b3a1263cce2011df"
+    },
+    "test_data.npy": {
+      "shape": [
+        1764,
+        896
+      ],
+      "dtype": "int64",
+      "sha256": "fb0e3bbac4f1e5cc50e30798c54051028da70b41ff301659aa6de2eddbdfa676"
+    },
+    "test_label.npy": {
+      "shape": [
+        1764
+      ],
+      "dtype": "int64",
+      "sha256": "b03a4b27537f685816c172c46dd7de1d94f6f805de89f3a26622ad7af28af9b3"
+    },
+    "val_data.npy": {
+      "shape": [
+        1764,
+        896
+      ],
+      "dtype": "int64",
+      "sha256": "bfc97d61fd9b3bd3744cda264fb5749d921b2220c1c9970e25a27dc055011ecb"
+    },
+    "val_label.npy": {
+      "shape": [
+        1764
+      ],
+      "dtype": "int64",
+      "sha256": "1bb84d04f4d717a2df751ba0d0b178e4ca50079260b8bfa7821b2c662ca7e95b"
+    }
+  },
+  "sample_counts": {
+    "train": 506,
+    "test": 126,
+    "val": 126
+  },
+  "class_counts": {
+    "train": {
+      "0": 149,
+      "1": 130,
+      "2": 73,
+      "5": 154
+    },
+    "test": {
+      "0": 37,
+      "1": 32,
+      "2": 18,
+      "5": 39
+    },
+    "val": {
+      "0": 37,
+      "1": 32,
+      "2": 18,
+      "5": 39
+    }
+  },
+  "provided_checkpoint_overlap": {
+    "test": 88,
+    "val": 88,
+    "interpretation": "The supplied historical checkpoint may have seen these samples. Its scores are diagnostic, not independent generalization estimates."
+  }
+}

@@ -1,0 +1,18 @@
+# data (course-provided, ~76 MB)
+*.npy
+*.npz
+
+# model weights (course-provided or regenerable, 50 MB+ each)
+*.pt
+*.pth
+
+# python
+__pycache__/
+*.py[cod]
+
+# envs
+.venv/
+venv/
+
+# jupyter
+.ipynb_checkpoints/
